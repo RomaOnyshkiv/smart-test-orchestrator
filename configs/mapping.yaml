@@ -1,0 +1,47 @@
+mappings:
+  payments-service:
+    affected_by:
+      - repo: payments-service
+        paths:
+          - src/payments/
+          - src/shared/
+    tests:
+      - test_repo: payments-tests
+        technology: java
+        suites:
+          - smoke
+          - regression
+        environments:
+          - stage
+          - prodlike
+
+  user-api:
+    affected_by:
+      - repo: user-api
+        paths:
+          - app/api/
+          - app/domain/
+    tests:
+      - test_repo: api-tests
+        technology: python
+        suites:
+          - smoke
+          - contract
+        environments:
+          - stage
+          - dev
+
+  checkout-ui:
+    affected_by:
+      - repo: frontend-app
+        paths:
+          - src/checkout/
+          - src/common/components/
+    tests:
+      - test_repo: ui-tests
+        technology: typescript
+        suites:
+          - critical-path
+          - regression
+        environments:
+          - stage

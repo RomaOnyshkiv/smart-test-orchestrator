@@ -1,0 +1,33 @@
+repositories:
+  payments-tests:
+    type: test-repo
+    technology: java
+    execution_mode: local
+    path: ../payments-tests
+    default_branch: main
+    env_files:
+      stage: .env.stage
+      prodlike: .env.prodlike
+      dev: .env.dev
+
+  api-tests:
+    type: test-repo
+    technology: python
+    execution_mode: local
+    path: ../api-tests
+    default_branch: main
+    env_files:
+      stage: .env.stage
+      prodlike: .env.prodlike
+      dev: .env.dev
+
+  ui-tests:
+    type: test-repo
+    technology: typescript
+    execution_mode: local
+    path: ../ui-tests
+    default_branch: main
+    env_files:
+      stage: .env.stage
+      prodlike: .env.prodlike
+      dev: .env.dev

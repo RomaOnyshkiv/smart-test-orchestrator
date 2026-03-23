@@ -1,0 +1,10 @@
+mappings:
+  sample-domain:
+    affected_by:
+      - repo: sample-repo
+        paths: [src/]
+    tests:
+      - test_repo: sample-tests
+        technology: python
+        suites: [smoke]
+        environments: [stage]

@@ -1,0 +1,10 @@
+service:
+  name: smart-test-orchestrator
+  log_level: INFO
+
+execution:
+  timeout_seconds: 1800
+  polling_interval_seconds: 15
+
+storage:
+  database: mongodb

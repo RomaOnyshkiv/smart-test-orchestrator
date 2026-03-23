@@ -1,0 +1,13 @@
+environments:
+  stage:
+    base_url: https://stage.example.com
+    secret_ref: stage-secrets
+    default: true
+
+  prodlike:
+    base_url: https://prodlike.example.com
+    secret_ref: prodlike-secrets
+
+  dev:
+    base_url: https://dev.example.com
+    secret_ref: dev-secrets

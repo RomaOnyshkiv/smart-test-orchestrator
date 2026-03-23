@@ -1,0 +1,22 @@
+{
+  "environment": "stage",
+  "changes": [
+    {
+      "repo_name": "payments-service",
+      "branch": "feature/checkout-fix",
+      "changed_files": [
+        "src/payments/checkout_service.py",
+        "src/shared/money.py"
+      ],
+      "commit_sha": "abc123"
+    },
+    {
+      "repo_name": "frontend-app",
+      "branch": "feature/checkout-button",
+      "changed_files": [
+        "src/checkout/button.tsx"
+      ],
+      "commit_sha": "def456"
+    }
+  ]
+}

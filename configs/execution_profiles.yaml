@@ -1,0 +1,15 @@
+profiles:
+  python:
+    default_command: pytest
+    report_format: json
+    timeout_seconds: 1200
+
+  java:
+    default_command: mvn test
+    report_format: junit
+    timeout_seconds: 1800
+
+  typescript:
+    default_command: npm test
+    report_format: junit
+    timeout_seconds: 1500

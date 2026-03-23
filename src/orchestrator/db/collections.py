@@ -1,0 +1,4 @@
+EXECUTIONS_COLLECTION = "executions"
+RUN_HISTORY_COLLECTION = "run_history"
+REPORTS_COLLECTION = "reports"
+FLAKY_STATS_COLLECTION = "flaky_stats"

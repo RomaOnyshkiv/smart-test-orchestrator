@@ -1,0 +1,12 @@
+# Example schedule.yaml for a test repository (place next to tests, path referenced in repositories.yaml).
+# Each list entry becomes one GitHub Actions job; all jobs run in parallel on workflow_dispatch,
+# and each cron fires only its matching job(s).
+schedules:
+  - id: nightly-smoke
+    cron: "0 2 * * *"
+    suite: smoke
+    environment: stage
+  - id: weekly-regression
+    cron: "0 4 * * 0"
+    suite: full
+    environment: prodlike

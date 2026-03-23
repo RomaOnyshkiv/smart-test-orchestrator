@@ -1,0 +1,6 @@
+{
+  "repository": "payments-service",
+  "branch": "feature/demo",
+  "changed_files": ["src/payments/demo.py"],
+  "commit_sha": "1234567890"
+}
